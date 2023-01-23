@@ -19,13 +19,13 @@ body{
   margin-bottom: 70px;
 }
 
-.toggle{
+.dashboard-toggle{
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.dashboard-toggle{
+.btn-toggle{
   width: 60px;
   height: 30px;
   transition: background-image 0.3s;
@@ -248,14 +248,14 @@ h5{
     margin-bottom: 70px;
   }
   
-  .toggle{
+  .dashboard-toggle{
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
     gap: 15px;
   }
   
-  .dashboard-toggle{
+  .btn-toggle{
     width: 60px;
     height: 30px;
     transition: background-image 0.3s;
@@ -275,6 +275,49 @@ h5{
 
 }
 
+body.light {
+  background: hsl(0, 0%, 96%);
+}
+
+body.light .cards{
+  background:  white;
+  color: black;
+  min-width: 250px;
+  height: 260px;
+  border-radius: 5px;
+}
 
 
+body.light .cards-second-section{
+  height: 130px;
+  min-width: 250px;
+}
 
+
+body.light h1{
+  color: black;
+}
+
+body.light p{
+  color:black;
+}
+
+body.light .toggle__circle {
+  position: absolute;
+  left: 32px;
+  top: 3px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: hsl(0, 0%, 96%);
+  cursor: pointer;
+}
+
+body.light .green-p{
+  color: hsl(163deg, 72%, 41%);
+}
+
+
+body.light .red-p{
+  color: hsl(356deg, 69%, 56%);
+}
