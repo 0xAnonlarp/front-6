@@ -30,6 +30,7 @@ body{
   height: 30px;
   transition: background-image 0.3s;
   background-image: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
+  cursor: pointer;
   border-radius: 20px;
   position: relative;
 }
