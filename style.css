@@ -1,0 +1,280 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+body{
+  margin: 30px 60px;
+  font-family: 'Inter', sans-serif;
+  background: hsl(230, 17%, 14%);
+  color: white;
+}
+
+/* navbar */
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.toggle{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.dashboard-toggle{
+  width: 60px;
+  height: 30px;
+  transition: background-image 0.3s;
+  background-image: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
+  border-radius: 20px;
+  position: relative;
+}
+
+.toggle__circle {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: hsl(230deg, 17%, 14%);
+  cursor: pointer;
+}
+
+p{
+  color: hsl(228, 34%, 66%);
+}
+
+/* cards main section */
+
+.dashboard-main-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: none;
+  gap: 1.5em;
+  margin-bottom: 50px;
+}
+
+.social-link , .daily-stats{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.cards{
+  background:  hsl(228, 28%, 20%);
+  min-width: 250px;
+  height: 260px;
+  border-radius: 5px;
+}
+
+.border-top {
+  border-top-width: 7px; 
+  border-top-color: transparent; 
+  border-top-style: solid; 
+  border-top-left-radius: 5px; 
+  border-top-right-radius: 5px; 
+  background-color: hsl(203deg, 89%, 53%);
+  background-origin: border-box;
+}
+
+h1{
+  font-size: 26px;
+}
+
+h3{
+  font-size: 56px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+h4{
+  letter-spacing: 3px;
+  font-weight: lighter;
+}
+
+h5{
+  font-size: 27px;
+}
+
+.username{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.social-icon{
+  width: 25px;
+}
+
+.cards p:not(.followers){
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.followers{
+  display: flex;
+  justify-content: center;
+  letter-spacing: 5px;
+  font-weight: 200px;
+  margin-top: 20px;
+}
+
+.daily-stats{
+  margin-top: 20px;
+}
+
+.green-p{
+  color: hsl(163deg, 72%, 41%);
+}
+
+.gradient{
+  background-image: linear-gradient(to right, hsl(37deg, 97%, 70%), hsl(329deg, 70%, 58%)); /* dégradé de couleur */
+}
+
+.red{
+  background-color: hsl(348deg, 97%, 39%);
+}
+
+
+/* dashbaord second section */
+
+.dashboard-second-section{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5em;
+  margin-bottom: 50px;
+}
+
+
+
+.cards-second-section{
+  height: 130px;
+  min-width: 250px;
+}
+
+.top-stats{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0px 30px;
+  
+}
+
+.bottom-stats{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0px 30px;
+ 
+
+}
+
+.right-stats{
+  display: flex;
+  gap: 0.5em;
+}
+
+.percent{
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-p{
+  color: hsl(356deg, 69%, 56%);
+}
+
+/* Responsivness */
+
+@media (max-width: 1250px){
+
+  body{
+    margin: 30px 30px;
+  }
+
+  .dashboard-main-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2;
+    gap: 1.5em;
+    margin-bottom: 50px;
+  }
+
+  .dashboard-second-section{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4;
+    gap: 1.5em;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 750px){
+
+  .dashboard-main-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4;
+    gap: 1.5em;
+    margin-bottom: 50px;
+  }
+
+  .dashboard-second-section{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: 8;
+    gap: 1.5em;
+    margin-bottom: 50px;
+  }
+
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+  
+  .toggle{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .dashboard-toggle{
+    width: 60px;
+    height: 30px;
+    transition: background-image 0.3s;
+    background-image: linear-gradient(to right, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
+    border-radius: 20px;
+    position: relative;
+  }
+
+  h1{
+    margin-bottom: 10px;
+  }
+
+  .title-info{
+    border-bottom: 1px solid rgba(139, 151, 198, 0.3);
+    padding-bottom: 20px;
+  }
+
+}
+
+
+
+
